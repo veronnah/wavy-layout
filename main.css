@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #202731;
+    overflow-x: hidden;
+}
+
+.blue {
+    background-color: #3c31dd;
+}
+
+.red {
+    background-color: #dd3f31;
+}
+
+.pink {
+    background-color: #ff0066;
+    min-height: 500px;
+}
+
+.pink .text-box{
+    padding: 100px;
+}
+
+.dark {
+    background-color: #0f0f10;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #202731;
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 148px;
+}
+
+.wave1 .shape-fill {
+    fill: #202731;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.wave .shape-fill {
+    fill: #202731;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 93px;
+}
+
+.wave2 .shape-fill {
+    fill: #202731;
+}
+
+.spacer {
+    aspect-ratio: 960/600;
+    margin-top: -1px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.spacer .text-box {
+    margin-top: 100px;
+}
+
+.layer1 {
+    background-image: url('./figures/waves.svg');
+}
+
+.layer2 {
+    background-image: url('./figures/waves2.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.unflip {
+    transform: rotate(-180deg);
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+}
+
+.text-box {
+    z-index: 1;
+}
